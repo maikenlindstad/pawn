@@ -1,0 +1,60 @@
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header img {
+  width: 20px;
+  border: none;
+}
+main {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.daily-log-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.the-content {
+  padding: 30px 5px;
+}
+
+a {
+  color: #303030;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: none;
+}
+
+.active:hover {
+  color: #303030;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+img {
+  width: 100%;
+  border: 1px solid #303030;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #303030;
+  padding: 20px;
+}
