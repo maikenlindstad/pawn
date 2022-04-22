@@ -1,4 +1,18 @@
 body {
-  background-color: #EFEAEA;
+  /* background-color: #EFEAEA; */
   margin: 0;
+}
+
+html {
+  background: repeating-conic-gradient(#F6EEEE 0% 25%, transparent 0% 50%) 
+              50% / 5px 5px;
+  background-attachment: fixed;
+}
+
+main {
+  background-color: white;
+  height: 100vh;
+  padding: 30px;
+  margin: 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.671) 1px 1px 50px ;
 }
