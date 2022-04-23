@@ -15,3 +15,17 @@ p, a{
   font-style: italic;
   margin: 15px 0;
 }
+
+.quote-p {
+  font-family: sans-serif;
+  color: #C15841;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.quote-cite {
+  font-family: sans-serif;
+  color: #C15841;
+  font-weight: 400;
+  font-size: 1.8em;
+}

@@ -31,7 +31,7 @@
     }
 
     .banner {
-  background-color: #303030;
+  background-color: #C15841;
   padding: 5px;
 }
 
@@ -46,35 +46,58 @@
 }
 
 .banner-2 {
-  background-color: #555555;
+  background-color: #303030;
+}
+
+.hero-banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 50px;
+}
+
+.quote {
+
+  position: relative;
+  bottom: 20;
+  padding: 20px;
+  max-width: 900px;
+  background-color: rgba(30, 30, 30, 0.16);
+  border: solid 6px #C15841;
 }
 
   </style>
+  <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-
-  
+  <title>Pawn | Home</title>
 </head>
 <body>
   <div class="banner banner-2">
-    <a href="log.html">None of the images is owned by this website. See sources of all images here.</a>
+    <a href="sources.html">None of the images is owned by this website. See sources of all images here.</a>
   </div>
   <div class="banner">
     <a href="log.html">Developer log.</a>
   </div>
   <header>
     <div>
-
+      <img src="images/icons/hamburger-menu.png" alt="hamburger-menu" class="icon">
     </div>
     <div>
       <img src="images/logo.png" alt="Pawn.com logo" style="width:100px">
     </div>
     <div>
-
+      <img src="images/icons/user.png" alt="user icon" class="icon">
+      <img src="images/icons/cart.png" alt="cart icon" class="icon">
     </div>
   </header>
   <main>
-    <p>Some information about what the page does</p>
+    <div class="hero-banner">
+      <div class="quote">
+        <p class="quote-p">"Chess isn't always competitive."</p>
+        <p class="quote-cite">- The Queens Gambit</p>
+      </div>
+    </div>
+    <!-- <p>Some information about what the page does</p> -->
   </main>
 </body>
 </html>
