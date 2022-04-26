@@ -1,2 +1,28 @@
 @import "_base.css";
 @import "_typography.css";
+
+.banner {
+  background-color: #C15841;
+  padding: 5px;
+}
+
+.banner a {
+padding-left: 100px;
+text-decoration: none;
+color: white;
+}
+
+.banner a:hover {
+color: grey;
+}
+
+.banner-2 {
+background-color: #303030;
+}
+
+.hero-banner {
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+padding: 50px;
+}
