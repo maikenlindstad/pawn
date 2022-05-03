@@ -27,6 +27,14 @@ export function clearStorage() {
   localStorage.clear();
 }
 
+export function deleteUser(user) {
+  localStorage.removeItem(userKey, user);
+}
+
+export function deleteToken(token) {
+  localStorage.removeItem(tokenKey, token);
+}
+
 function saveToStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 

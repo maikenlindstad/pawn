@@ -2,12 +2,32 @@
 <html lang="en">
 
   <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/admin.css">
     <title>Pawn | Admin | Products</title>
+    <style>
+      .tabs {
+        list-style: none;
+        cursor: pointer;
+
+      }
+      .page {
+        display: none;
+      }
+
+      .is-active {
+        display: block;
+      }
+
+      .tab.is-active a{
+        color: red;
+
+      }
+    </style>
   </head>
 
   <body>
@@ -18,12 +38,66 @@
     </header>
 
     <main>
-
-      <h2>What would you like to do?</h2>
-      <a href="">Add product</a>
-      <a href="">Edit product</a>
-      <a href="">Remove product</a>
-
+      <div>
+        <div class="dynamic-page-section">
+          <h2>What would you like to do?</h2>
+          <ul class="tabs">
+            <li class="tab is-active">
+              <a data-switcher data-tab="1">Add</a>
+            </li>
+            <li class="tab">
+              <a data-switcher data-tab="2">Edit</a>
+            </li>
+            <li class="tab">
+              <a data-switcher data-tab="3">Delete</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div>
+        
+        <div class="pages">
+          <div class="page is-active" data-page="1">
+            <div>
+              <h2>Add</h2>
+              <p>Add product</p>
+              
+            </div>
+            <div>
+              
+              <form>
+                
+                <div>
+                  <label for="title">Title</label>
+                  <input id="title">
+                </div>
+                <div>
+                  <label for="price">Price</label>
+                  <input id="price">
+                </div>
+                <div>
+                  <label for="description">Description</label>
+                  <input id="description">
+                </div>
+                <button>Add</button>
+                <div class="message-container">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="page" data-page="2">
+            <h2>Edit</h2>
+            <p>Edit product</p>
+          </div>
+          <div class="page" data-page="3">
+            <h2>Delete</h2>
+            <p>Delete product</p>
+          </div>
+        </div>
+      </div>
+      
+      
     </main>
 
     <footer>
@@ -43,9 +117,11 @@
       </ul>
 
     </footer>
+    <!-- <script src="../js/common/createMenu.js" type="module"></script> -->
     <script src="../js/components/common/createMenu.js" type="module"></script>
     <script src="../js/admin.js" type="module"></script>
-
+    <script src="../js/components/dynamicPages.js"></script>
+    <script src="../js/add.js" type="module"></script>
   </body>
 
 </html>

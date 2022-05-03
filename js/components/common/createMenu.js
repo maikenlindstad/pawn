@@ -5,9 +5,6 @@ export default function createMenu() {
 
   const { pathname } = document.location;
 
-
-
-
   const container = document.querySelector(".admin-menu");
   const main = document.querySelector(".welcome-section");
 
@@ -29,13 +26,13 @@ export default function createMenu() {
         <li><a href="welcome.html" class="${pathname === "/admin/welcome.html" ? "active" : ""}">Welcome</a></li>
         <li><a href="products.html" class="${pathname === "/admin/products.html" ? "active" : ""}">Products</a></li>
         <li><a href="order.html" class="${pathname === "/admin/order.html" ? "active" : ""}">Order</a></li>
-        <li><a href="../login.html" id="logout">Logout</a></li>
+        <li><a href="" id="logout">Logout</a></li>
       </ul>
     </nav>
   </div>`;
 
-  main.innerHTML = `
-  <h2>Welcome ${username} </h2>`;
+  // main.innerHTML += `
+  // <h2>Welcome ${username} </h2>`;
 
   logoutButton();
 
