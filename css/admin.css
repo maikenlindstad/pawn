@@ -1,0 +1,8 @@
+a {
+  color: black;
+}
+
+.active {
+  color: aquamarine;
+  text-decoration: line-through;
+}
