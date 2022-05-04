@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <title>Pawn | Admin | Product</title>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div>
+        <a href="../products.html">Go back</a>
+        Edit product
+      </div>
+    </header>
+
+    <main>
+      <div class="edit-container">
+        <div class="menu-container"></div>
+        <h1>Edit product</h1>
+        <div class="loading">Loading product...</div>
+
+
+        <form action="edit-form">
+
+          
+          
+          <div>
+            <label for="title">Title</label>
+            <input id="title">
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <input id="price">
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+
+          <input id="id" type="hidden">
+          <div>
+            <button id="update">Update</button>
+          </div>
+          <div class="delete-container">
+          </div>
+          <div class="message-container"></div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+
+      <ul>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+      </ul>
+
+      <ul>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+      </ul>
+
+    </footer>
+    <!-- <script src="../js/common/createMenu.js" type="module"></script> -->
+    <!-- <script src="../../js/components/common/createMenu.js" type="module"></script> -->
+    <!-- <script src="../../js/admin.js" type="module"></script> -->
+    <script src="../../js/edit-specific.js" type="module"></script>
+    <script src="../../js/products/deleteButton.js" type="module"></script>
+  </body>
+
+</html>

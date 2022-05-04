@@ -27,6 +27,14 @@
         color: red;
 
       }
+
+      .products-list {
+        display: flex;
+        flex-direction: column;
+      }
+      p{
+        cursor: pointer;
+      }
     </style>
   </head>
 
@@ -42,10 +50,10 @@
         <div class="dynamic-page-section">
           <h2>What would you like to do?</h2>
           <ul class="tabs">
-            <li class="tab is-active">
+            <li class="tab">
               <a data-switcher data-tab="1">Add</a>
             </li>
-            <li class="tab">
+            <li class="tab is-active">
               <a data-switcher data-tab="2">Edit</a>
             </li>
             <li class="tab">
@@ -58,7 +66,7 @@
       <div>
         
         <div class="pages">
-          <div class="page is-active" data-page="1">
+          <div class="page" data-page="1">
             <div>
               <h2>Add</h2>
               <p>Add product</p>
@@ -86,9 +94,12 @@
               </form>
             </div>
           </div>
-          <div class="page" data-page="2">
+          <div class="page is-active" data-page="2">
             <h2>Edit</h2>
             <p>Edit product</p>
+            <div class="products-list">
+
+            </div>
           </div>
           <div class="page" data-page="3">
             <h2>Delete</h2>
@@ -122,6 +133,8 @@
     <script src="../js/admin.js" type="module"></script>
     <script src="../js/components/dynamicPages.js"></script>
     <script src="../js/add.js" type="module"></script>
+    <script src="../js/edit.js" type="module"></script>
   </body>
 
 </html>
+
