@@ -34,20 +34,20 @@ function submitForm(event) {
   const priceValue = parseFloat(price.value);
   const descriptionValue = description.value.trim();
   const featuredValue = isFeatured;
-  const imageValue = image.files
+  // const imageValue = image.files
 
   if (titleValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0) {
     return displayMessage("warning", "Please supply proper values", ".message-container");
   };
 
-  addProduct(titleValue, priceValue, descriptionValue, featuredValue, imageValue);
+  addProduct(titleValue, priceValue, descriptionValue, featuredValue);
 }
 
-async function addProduct(title, price, description, featured, image) {
+async function addProduct(title, price, description, featured) {
   const url = baseUrl + "api/products";
   const filesAdded = new FormData();
 
-  filesAdded.append("files.image", image[0]);
+  // filesAdded.append("files.image", image[0]);
 
   const data = JSON.stringify({
     data: {
@@ -55,7 +55,7 @@ async function addProduct(title, price, description, featured, image) {
       price: price,
       description: description,
       featured: featured,
-      image: image,
+      // image: image,
     }
   })
 

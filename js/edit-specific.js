@@ -26,6 +26,8 @@ const idInput = document.querySelector("#id");
 const message = document.querySelector(".message-container");
 const loading = document.querySelector(".loading");
 
+console.log(productsUrl);
+
 // const productsUrl = baseUrl + "api/products?populate=*";
 
 (async function () {
