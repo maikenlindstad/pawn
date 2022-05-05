@@ -3,12 +3,8 @@ import displayMessage from "./components/common/displayMessage.js";
 import { getToken } from "./utils/storage.js";
 import deleteButton from "./products/deleteButton.js";
 
-
-
 const queryString = document.location.search;
-
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
 
 if (!id) {
@@ -21,9 +17,7 @@ if (!token) {
   location.href = "../../login.html"
 }
 
-
 const productsUrl = baseUrl + "api/products/" + id + "?populate=*";
-
 const form = document.querySelector("form");
 const title = document.querySelector("#title");
 const price = document.querySelector("#price");

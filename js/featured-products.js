@@ -13,6 +13,13 @@ const productsUrl = baseUrl + "api/products?populate=*";
 
     container.innerHTML = "";
 
+    const featured = true;
+
+    // console.log(json);
+    console.log(json.data[0].attributes.featured);
+    // if (json.data[0].attributes.featured) {
+
+    // }
 
     json.data.forEach(function (product) {
       container.innerHTML += `
@@ -20,7 +27,7 @@ const productsUrl = baseUrl + "api/products?populate=*";
           <img src="http://localhost:1337${product.attributes.image.data[0].attributes.url}" alt=${product.attributes.title}>
           <h3>${product.attributes.title}</h3>
           <p>${product.attributes.description}</p>
-          <p>${product.attributes.price}</p>
+          <p>${product.attributes.price},-</p>
         </a>`;
     });
 
