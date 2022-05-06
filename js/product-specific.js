@@ -31,9 +31,10 @@ const productUrl = baseUrl + "api/products/" + id + "?populate=*";
     container.innerHTML = "";
 
     container.innerHTML += `
-    <img src="http://localhost:1337${details.data.attributes.image.data[0].attributes.url}" alt="${details.data.attributes.title}">
+    <img src="https://pawn-api.herokuapp.com${details.data.attributes.image.data[0].attributes.url}" alt="${details.data.attributes.title}">
       <h2>${details.data.attributes.title}</h2>
       <p>${details.data.attributes.description}</p>`;
+
 
 
   } catch (error) {
