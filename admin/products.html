@@ -71,29 +71,30 @@
             </div>
             <div>
               
-              <form>
+              <form  id="create" action="http://localhost:1337/api/products?populate=image" method="post" enctype="multipart/form-data">
                 
                 <div>
                   <label for="title">Title</label>
-                  <input id="title">
+                  <input id="title" name="title">
                 </div>
                 <div>
                   <label for="price">Price</label>
-                  <input id="price">
+                  <input id="price" name="price">
                 </div>
                 <div>
                   <label for="description">Description</label>
-                  <input id="description">
+                  <input id="description" name="description">
                 </div>
                 <div>
                   <label for="featured">Featured</label>
-                  <input type="checkbox" id="featured">
+                  <input type="checkbox" id="featured" name="featured">
                 </div>
                 <div>
                   <label for="image">Image</label>
-                  <input type="file" id="image">
+                  <input type="file" id="image" name="files.image">
                 </div>
-                <button>Add</button>
+                <button type="reset">Reset</button>
+                <button type="submit">Add</button>
                 <div class="message-container">
                 </div>
               </form>
