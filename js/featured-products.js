@@ -14,8 +14,9 @@ const productsUrl = baseUrl + "api/products?populate=*";
 
     for (let i = 0; i < json.data.length; i++) {
       console.log(json.data[i].attributes.image.data[0].attributes.url);
+      console.log(json.data[i]);
       let displayOption = "none";
-
+      
       if (json.data[i].attributes.featured) {
         displayOption = "block";
       }
