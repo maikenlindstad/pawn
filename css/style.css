@@ -170,6 +170,34 @@ a {
   text-decoration: none;
 }
 
+.main__admin__div__page__add--product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px;
+}
+
+.main__admin__div__page__add--product div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#display {
+  border: 1px solid black;
+  width: 400px;
+  height: 450px;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
 .footer__admin {
   background-color: #303030;
   color: white;

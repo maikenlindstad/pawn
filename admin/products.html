@@ -41,38 +41,51 @@
             <div>
               <h2 class="main__admin__h2">Add product</h2>
             </div>
-            <div>
-              <div class="message-container">
+            <div class="main__admin__div__page__add--product">
+              <div>
+                <div>
+                  <div class="message-container">
+                  </div>
+                  <form>
+                    <div>
+                      <label for="title">Title</label>
+                      <input id="title" name="title">
+                    </div>
+                    <div>
+                      <label for="price">Price</label>
+                      <input id="price" name="price">
+                    </div>
+                    <div>
+                      <label for="description">Description</label>
+                      <input id="description" name="description">
+                    </div>
+                    <div>
+                      <label for="image">Image</label>
+                      <input type="file" id="image" name="files.image">
+                    </div>
+                    <div>
+                      <label for="featured">Featured</label>
+                      <input type="checkbox" placeholder="Hello, World" id="featured" name="featured">
+                      <button type="reset">Reset</button>
+                      <button type="submit">Add</button>
+                    </div>
+                    
+                   
+                    <div class="message-container">
+                    </div>
+                  </form>
+                </div>
               </div>
-              <form>
+              <div>
                 <div>
-                  <label for="title">Title</label>
-                  <input id="title" name="title">
-                </div>
-                <div>
-                  <label for="price">Price</label>
-                  <input id="price" name="price">
-                </div>
-                <div>
-                  <label for="description">Description</label>
-                  <input id="description" name="description">
-                </div>
-                <div>
-                  <label for="featured">Featured</label>
-                  <input type="checkbox" id="featured" name="featured">
-                </div>
-                <div>
-                  <label for="image">Image</label>
-                  <input type="file" id="image" name="files.image">
-                  <div id="display" style="border: 1px solid black; width: 200px; height: 200px; background-size: contain; background-position-x: center;background-position-y: center; background-repeat: no-repeat;">
+                  
+                  <div id="display" >
                   </div>
                 </div>
-                <button type="reset">Reset</button>
-                <button type="submit">Add</button>
-                <div class="message-container">
-                </div>
-              </form>
+              </div>
             </div>
+            
+            
           </div>
           <div class="main__admin__div__page page is-active" data-page="2">
             <h2 class="main__admin__h2">Edit product</h2>
