@@ -37,13 +37,13 @@ p, a{
   font-size: 1.8em;
 }
 
-h1 {
+/* h1 {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   transform: scaleY(2);
   font-weight: 400;
   margin: 0;
-}
+} */
 
 p {
   font-family: sans-serif;
@@ -59,3 +59,8 @@ p {
   max-width: 900px;
   background-color: rgba(30, 30, 30, 0.16);
   border: solid 6px #C15841;
+}
+
+.active {
+  color: red;
+}

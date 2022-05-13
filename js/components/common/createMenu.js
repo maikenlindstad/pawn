@@ -4,12 +4,29 @@ import logoutButton from "./logoutButton.js";
 export default function createMenu() {
 
   const { pathname } = document.location;
+  console.log(pathname);
+
+  const username = getUserName();
+
 
   const container = document.querySelector(".admin-menu");
   const main = document.querySelector(".welcome-section");
+  const publicMenu = document.querySelector(".menu-container-public");
 
 
-  const username = getUserName();
+  let authLink = `<a href="login.html" class="${pathname === '/login.html' ? 'active' : '' || pathname === '/admin/products.html' ? 'active' : ''}">Business</a>`;
+
+  if (username) {
+    authLink = `<a href="admin/welcome.html">Back to admin</a>`;
+  }
+
+  publicMenu.innerHTML = `
+  ${authLink}
+  <a href="index.html" class="${pathname === '/index.html' ? 'active' : '' || pathname === '/products.html' ? 'active' : '' || pathname === '/product-specific.html' ? 'active' : '' || pathname === '/cart.html' ? 'active' : ''}">Private</a>
+  `;
+
+
+
 
   container.innerHTML = `
   <div class="logged-in-as">
@@ -38,4 +55,4 @@ export default function createMenu() {
 
 };
 
-// createMenu();
+createMenu();

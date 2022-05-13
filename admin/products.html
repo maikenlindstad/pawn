@@ -35,6 +35,9 @@
       p{
         cursor: pointer;
       }
+      .preview {
+        width: 50px;
+      }
     </style>
   </head>
 
@@ -70,15 +73,10 @@
               
             </div>
             <div>
-<<<<<<< HEAD
               <div class="message-container">
               </div>
-              <form>
-=======
               
-              <form  id="create" action="http://localhost:1337/api/products?populate=image" method="post" enctype="multipart/form-data">
->>>>>>> 3d5b35b9c3277ff3e6fc91041384b659e3ec2a2e
-                
+              <form>
                 <div>
                   <label for="title">Title</label>
                   <input id="title" name="title">
@@ -98,19 +96,13 @@
                 <div>
                   <label for="image">Image</label>
                   <input type="file" id="image" name="files.image">
-                  <div id="display" style="border: 1px solid black; width: 200px; height: 200px; background-size: contain; background-position-x: center; background-repeat: no-repeat;">
-
+                  <div id="display" style="border: 1px solid black; width: 200px; height: 200px; background-size: contain; background-position-x: center;background-position-y: center; background-repeat: no-repeat;">
                   </div>
                 </div>
-<<<<<<< HEAD
-                <button class="button">Add</button>
-                
-=======
                 <button type="reset">Reset</button>
                 <button type="submit">Add</button>
                 <div class="message-container">
                 </div>
->>>>>>> 3d5b35b9c3277ff3e6fc91041384b659e3ec2a2e
               </form>
             </div>
           </div>

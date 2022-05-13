@@ -1,5 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
+import createMenu from "./components/common/createMenu.js";
+createMenu();
 
 const productsUrl = baseUrl + "api/products?populate=*";
 
@@ -16,7 +18,7 @@ const productsUrl = baseUrl + "api/products?populate=*";
       console.log(json.data[i].attributes.image.data[0].attributes.url);
       console.log(json.data[i]);
       let displayOption = "none";
-      
+
       if (json.data[i].attributes.featured) {
         displayOption = "block";
       }

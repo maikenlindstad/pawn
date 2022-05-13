@@ -1,6 +1,8 @@
 import displayMessage from "./components/common/displayMessage.js";
 import { getToken, saveToken, saveUser } from "./utils/storage.js";
 import { baseUrl } from "./settings/api.js";
+// import createMenu from "./components/common/createMenu.js";
+// createMenu();
 
 
 const form = document.querySelector("form");

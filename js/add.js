@@ -15,6 +15,19 @@ const message = document.querySelector(".message-container");
 
 const url = baseUrl + "api/products";
 
+var uploadedImage = "";
+// Codefoxx
+image.addEventListener("change", function () {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    uploadedImage = reader.result;
+    document.querySelector("#display").style.backgroundImage = `
+    url(${uploadedImage})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+})
+
+
 
 let isFeatured = false;
 
