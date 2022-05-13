@@ -3,25 +3,20 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
-
+  
 body {
   margin: 0;
   background-color: #F6EEEE;
   font-family: sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .tabs {
   list-style: none;
   cursor: pointer;
-}
 
+}
 .page {
   display: none;
 }
@@ -30,24 +25,18 @@ body {
   display: block;
 }
 
-.tab.is-active a {
+.tab.is-active a{
   color: red;
+
 }
 
 .products-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
-p {
+p{
   cursor: pointer;
 }
-
 .preview {
   width: 50px;
 }
@@ -56,29 +45,28 @@ p {
   display: none;
 }
 
+// colors general
+$colors: (
+  dark30: #303030, 
+  white: white,
+);
+
+//header global
 .header__admin {
   border-bottom: #303030 1px solid;
   width: 95%;
   margin: auto;
 }
 
+//header admin section
 .header__admin__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__admin__menu__div__nav__ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-inline-start: 0;
   display: flex;
   list-style: none;
 }
@@ -89,7 +77,7 @@ p {
 
 .header__admin__menu__div__nav__ul--li__a {
   text-decoration: none;
-  color: #303030;
+  color: map-get($colors, dark30);
 }
 
 .header__admin__menu__div__nav__ul--li__a:hover {
@@ -98,23 +86,28 @@ p {
 
 .active {
   text-decoration: underline;
+
 }
 
+//main global 
 .main__admin,
 .main__public {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
   width: 95%;
   margin: auto;
 }
 
-.main__admin__h1,
+.main__admin__h1, 
 .main__admin__h2,
-.main__admin__h3 {
+.main__admin__h3{
   color: #C15841;
 }
 
+
+
+//Welcome
+
+//Products
 .main__admin__div__dynamic-page-section--tabs {
   list-style: none;
   cursor: pointer;
@@ -125,24 +118,20 @@ p {
   width: 100px;
   border-radius: 2px;
   color: white;
-  -webkit-box-shadow: #a49191 2px 2px 10px;
-          box-shadow: #a49191 2px 2px 10px;
+  box-shadow: #a49191 2px 2px 10px;
   text-align: center;
   margin: 10px;
 }
 
 .main__admin__div__page__product-list__a__div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: #303030 solid 1px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  border-bottom:#303030 solid 1px;
+  align-items: center;
+  // max-width: 1000px;
+  // margin: auto;
 }
+
 
 .main__admin__div__page__product-list__a__div:hover {
   background-color: #c1594184;
@@ -150,7 +139,8 @@ p {
 
 .main__admin__div__page__product-list__a__div img,
 .main__admin__div__page__product-list__a__div p,
-.main__admin__div__page__product-list__a__div a {
+.main__admin__div__page__product-list__a__div a
+ {
   padding: 20px;
   color: #303030;
 }
@@ -159,17 +149,21 @@ a {
   text-decoration: none;
 }
 
+// .main__admin__div__dynamic-page-section--tab.is-active a {
+//   box-sha
+// }
+
+//Add
+
+
+//footer admin section
 .footer__admin {
-  background-color: #303030;
+  background-color: map-get($colors, dark30);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 40px 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .footer__private {
@@ -178,8 +172,7 @@ a {
 }
 
 .footer__admin__div__ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
   list-style: none;
   margin: 0;
 }
@@ -188,4 +181,3 @@ a {
   margin: 0;
   text-transform: uppercase;
 }
-/*# sourceMappingURL=style.css.map */

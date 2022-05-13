@@ -5,7 +5,7 @@ const productsUrl = baseUrl + "api/products?populate=*";
 
 (async function () {
 
-  const container = document.querySelector(".products-list");
+  const container = document.querySelector(".main__admin__div__page__products-list");
 
   try {
     const response = await fetch(productsUrl);
@@ -17,10 +17,13 @@ const productsUrl = baseUrl + "api/products?populate=*";
 
     json.data.forEach(function (product) {
       container.innerHTML += `
-      <a href="products/edit.html?id=${product.id}">
-        <img class="preview" src="https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url}" alt="${product.attributes.title}"> | ${product.attributes.title} | ${product.attributes.price}
-      </a>
-        `;
+        <a href="products/edit.html?id=${product.id}" class="main__admin__div__page__products-list__a">
+          <div class="main__admin__div__page__product-list__a__div">
+            <img class="preview" src="https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url}" alt="${product.attributes.title}">
+            <p>Title: ${product.attributes.title}</p>
+            <p>Price: ${product.attributes.price}</p>
+          </div>
+        </a>`;
     });
 
     console.log(json.data);
@@ -28,7 +31,7 @@ const productsUrl = baseUrl + "api/products?populate=*";
   }
   catch (error) {
     console.log(error);
-    displayMessage("error", error, ".products-list");
+    displayMessage("error", error, ".main__admin__div__page__products-list");
   }
 
 })();
