@@ -15,18 +15,37 @@ const message = document.querySelector(".message-container");
 
 const url = baseUrl + "api/products";
 
-var uploadedImage = "";
-// Codefoxx
-image.addEventListener("change", function () {
-  const reader = new FileReader();
-  reader.addEventListener("load", () => {
-    uploadedImage = reader.result;
-    document.querySelector("#display").style.backgroundImage = `
-    url(${uploadedImage})`;
-  });
-  reader.readAsDataURL(this.files[0]);
-})
 
+(function imageDisplay() {
+  var uploadedImage = "";
+  // Codefoxx
+  image.addEventListener("change", function () {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+      uploadedImage = reader.result;
+      document.querySelector("#display").style.backgroundImage = `
+      url(${uploadedImage})`;
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.querySelector(".displayPlaceholder").style.display = `
+    none`;
+  })
+})();
+
+
+// Comment: Proud to say I just understood what needed to be done here. 
+// No Google for this bit
+// And it worked right away :D
+
+const resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", reset);
+
+function reset() {
+  document.querySelector("#display").style.backgroundImage = `none`;
+  document.querySelector(".warning").style.display = `none`;
+}
+
+////////////////////////////////////////////////////////////////////////
 
 
 let isFeatured = false;
@@ -86,6 +105,7 @@ async function submitForm(event) {
     const response = await fetch(url, options);
     console.log(response);
     location.href = "products.html";
+
   }
 
   catch (error) {

@@ -42,32 +42,37 @@
               <h2 class="main__admin__h2">Add product</h2>
             </div>
             <div class="main__admin__div__page__add--product">
-              <div>
-                <div>
+              <div class="main__admin__div__page__add--product__div form__container">
+                <div class="">
                   <div class="message-container">
                   </div>
-                  <form>
-                    <div>
-                      <label for="title">Title</label>
-                      <input id="title" name="title">
+                  <form class="main__admin__div__page__add--product__div__form">
+                    <div class="main__admin__div__page__add--product__div__form__div">
+                      <label for="title" class="main__admin__div__page__add--product__div__form__div__label">Title</label>
+                      <input id="title" name="title" class="main__admin__div__page__add--product__div__form__div__input">
                     </div>
-                    <div>
-                      <label for="price">Price</label>
-                      <input id="price" name="price">
+                    <div class="main__admin__div__page__add--product__div__form__div">
+                      <label for="price" class="main__admin__div__page__add--product__div__form__div__label">Price</label>
+                      <input id="price" name="price" class="main__admin__div__page__add--product__div__form__div__input">
                     </div>
-                    <div>
-                      <label for="description">Description</label>
-                      <input id="description" name="description">
+                    <div class="main__admin__div__page__add--product__div__form__div">
+                      <label for="description" class="main__admin__div__page__add--product__div__form__div__label">Description</label>
+                      <textarea id="description" name="description" class="main__admin__div__page__add--product__div__form__div__textarea">
+                      </textarea>
                     </div>
-                    <div>
-                      <label for="image">Image</label>
-                      <input type="file" id="image" name="files.image">
+                    <div class="main__admin__div__page__add--product__div__form__div">
+                      <label for="image" class="main__admin__div__page__add--product__div__form__div__label">Image</label>
+                      <input type="file" id="image" name="files.image" class="main__admin__div__page__add--product__div__form__div__input image">
                     </div>
-                    <div>
-                      <label for="featured">Featured</label>
-                      <input type="checkbox" placeholder="Hello, World" id="featured" name="featured">
-                      <button type="reset">Reset</button>
-                      <button type="submit">Add</button>
+                    <div class="main__admin__div__page__add--product__div__form__div--featured-and-add">
+                      <div>
+                        <input type="checkbox" placeholder="Hello, World" id="featured" name="featured" class="main__admin__div__page__add--product__div__form__div__input--checkbox">
+                        <label for="featured" class="main__admin__div__page__add--product__div__form__div__label">Featured</label>
+                      </div>
+                      <div class="main__admin__div__page__add--product__div__form__div--featured-and-add__button--div ">
+                        <button type="reset" id="reset" class="main__admin__div__page__add--product__div__form__div__button">Reset</button>
+                        <button type="submit" class="main__admin__div__page__add--product__div__form__div__button">Add</button>
+                      </div>
                     </div>
                     
                    
@@ -76,10 +81,14 @@
                   </form>
                 </div>
               </div>
-              <div>
-                <div>
-                  
-                  <div id="display" >
+              <div class="main__admin__div__page__add--product__div  image--div">
+                <!-- <label for="display">Image</label> -->
+                <div style=" 
+                background-color: #c159411b;  border: 1px solid #C15841; border-radius: 4px;  ">
+                  <div id="display">
+                    <p class="displayPlaceholder">
+                      Preview image
+                    </p>
                   </div>
                 </div>
               </div>
@@ -87,8 +96,8 @@
             
             
           </div>
-          <div class="main__admin__div__page page is-active" data-page="2">
-            <h2 class="main__admin__h2">Edit product</h2>
+          <div class="main__admin__div__page page  is-active" data-page="2">
+            <h2 class="main__admin__h2" id="edit">Edit product</h2>
             <div class="main__admin__div__page__products-list">
               
             </div>
