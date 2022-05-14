@@ -3,7 +3,7 @@ import { baseUrl } from "../settings/api.js";
 
 export default function deleteButton(id) {
   const container = document.querySelector(".delete-container");
-  container.innerHTML = `<button type="button" class="delete">Delete</button>`;
+  container.innerHTML = `<button type="button" class="delete  main__admin__div__page__add--product__div__form__div__button"">Delete</button>`;
 
   const button = document.querySelector("button.delete");
 

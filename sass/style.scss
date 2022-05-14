@@ -110,12 +110,24 @@ $colors: (
   display: flex;
   align-items: center;
 }
-.warning {
-  background-color: #C15841;
+
+.warning,
+.success {
   border-radius: 4px;
   color: white;
   padding: 2px;
 }
+
+.warning {
+  background-color: #C15841;
+ 
+}
+
+.success {
+  background-color: rgb(77, 121, 77);
+}
+
+
 .main__admin__div__dynamic-page-section--tabs {
   margin-bottom: 60px;
   list-style: none;
@@ -183,7 +195,8 @@ a {
 
 //Add
 
-.main__admin__div__page__add--product {
+.main__admin__div__page__add--product,
+.main__admin__div__page__edit--product {
   display: flex;
   max-width: 1000px;
   margin: auto;
@@ -192,7 +205,8 @@ a {
   // flex-direction: column;
 }
 
-.main__admin__div__page__add--product__div {
+.main__admin__div__page__add--product__div,
+.main__admin__div__page__edit--product__div {
   display: flex;
   margin: 0 10px;
   // width: 400px;
@@ -202,7 +216,8 @@ a {
 }
 
 
-.main__admin__div__page__add--product__div__form__div {
+.main__admin__div__page__add--product__div__form__div,
+.main__admin__div__page__edit--product__div__form__div {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
@@ -212,20 +227,25 @@ a {
   max-width: 800px;
   width: 100%;
 }
-.main__admin__div__page__add--product__div__form__div--featured-and-add {
+.main__admin__div__page__add--product__div__form__div--featured-and-add,
+.main__admin__div__page__add--product__div__form__div--featured-save-delete {
   display: flex;
   // justify-content: space-between;
   // flex-direction: row;
 }
 
-.main__admin__div__page__add--product__div__form__div--featured-and-add__button--div {
+.main__admin__div__page__add--product__div__form__div--featured-and-add__button--div,
+.main__admin__div__page__add--product__div__form__div--featured-save-delete__button--div {
   display: flex;
   justify-content: space-around;
 }
 
 .main__admin__div__page__add--product__div__form__div__label,
 .main__admin__div__page__add--product__div__form__div__input,
-.main__admin__div__page__add--product__div__form__div__input--checkbox {
+.main__admin__div__page__add--product__div__form__div__input--checkbox,
+.main__admin__div__page__edit--product__div__form__div__label,
+.main__admin__div__page__edit--product__div__form__div__input,
+.main__admin__div__page__edit--product__div__form__div__input--checkbox {
   color: #C15841 ;
   font-weight: 400;
 }
@@ -250,15 +270,19 @@ a {
 }
 
 .main__admin__div__page__add--product__div__form__div__input,
-.main__admin__div__page__add--product__div__form__div__textarea {
+.main__admin__div__page__add--product__div__form__div__textarea,
+.main__admin__div__page__edit--product__div__form__div__textarea {
   border:#C15841 1px solid;
   width: 280px;
 }
 
-.main__admin__div__page__add--product__div__form__div__textarea {
+.main__admin__div__page__add--product__div__form__div__textarea,
+.main__admin__div__page__edit--product__div__form__div__textarea {
   max-width: 500px;
   width: 100%;
   height: 175px;
+  color: #C15841;
+  font-family: sans-serif;
 }
 
 .main__admin__div__page__add--product__div__form__div__input[type=file] {

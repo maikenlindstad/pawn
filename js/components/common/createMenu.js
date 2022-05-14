@@ -24,9 +24,9 @@ export default function createMenu() {
         <div class="header__admin__menu__div">
           <nav class="header__admin__menu__div__nav">
             <ul class="header__admin__menu__div__nav__ul">
-              <li class="header__admin__menu__div__nav__ul--li"><a href="../welcome.html" class="${pathname === "/admin/welcome.html" ? "active" : ""}">Welcome</a></li>
-              <li class="header__admin__menu__div__nav__ul--li"><a href="../products.html" class="${pathname === "/admin/products.html" ? "active" : ""}">Products</a></li>
-              <li class="header__admin__menu__div__nav__ul--li"><a href="../order.html" class="${pathname === "/admin/order.html" ? "active" : ""}">Order</a></li>
+              <li class="header__admin__menu__div__nav__ul--li"><a href="../welcome.html" class="header__admin__menu__div__nav__ul--li__a ${pathname === "/admin/welcome.html" ? "active" : ""}">Welcome</a></li>
+              <li class="header__admin__menu__div__nav__ul--li"><a href="../products.html" class="header__admin__menu__div__nav__ul--li__a ${pathname === "/admin/products.html" ? "active" : ""}">Products</a></li>
+              <li class="header__admin__menu__div__nav__ul--li"><a href="../order.html" class="header__admin__menu__div__nav__ul--li__a ${pathname === "/admin/order.html" ? "active" : ""}">Order</a></li>
               <li class="header__admin__menu__div__nav__ul--li"><a href=""  class="header__admin__menu__div__nav__ul--li__a" id="logout">Logout</a></li>
             </ul>
           </nav>

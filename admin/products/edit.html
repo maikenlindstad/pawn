@@ -26,43 +26,73 @@
         <div class="crumbs">
           <a href="../products.html"><p class="crumbs">Products</p></a>
           <span>/</span>
-          <p class="crumbs crumbs-active">Edit product</p>
+          <p class="crumbs crumbs-active">Edit</p>
         </div>
         <div class="menu-container"></div>
-        <h1>Edit product</h1>
+        <h1 class="main__admin__h1">Edit product</h1>
         <div class="loading">Loading product...</div>
-        <form action="edit-form">
 
+
+        <div>
+          <h2 class="main__admin__h2" id="edit">Editing "Titlename"</h2>
+        </div>
+
+<!-- ////// -->
+
+        <div class="main__admin__div__page__edit--product">
+          <div class="main__admin__div__page__edit--product__div form__container">
+            <div class="">
+              <div class="message-container">
+              </div>
+                <form class="main__admin__div__page__edit--product__div__form" action=" edit-form">
+                    <div class="main__admin__div__page__edit--product__div__form__div">
+                      <label for="title" class="main__admin__div__page__add--product__div__form__div__label">Title</label>
+                      <input id="title" class="main__admin__div__page__add--product__div__form__div__input">
+                    </div>
+                    <div class="main__admin__div__page__edit--product__div__form__div">
+                      <label for="price" class="main__admin__div__page__add--product__div__form__div__label">Price</label>
+                      <input id="price" class="main__admin__div__page__add--product__div__form__div__input">
+                    </div>
+                    <div class="main__admin__div__page__edit--product__div__form__div">
+                      <label for="description" class="main__admin__div__page__add--product__div__form__div__label">Description</label>
+                      <textarea id="description" class="main__admin__div__page__edit--product__div__form__div__textarea"></textarea>
+                    </div>
+
+                    <input id="id" type="hidden">
+                    <div class="main__admin__div__page__add--product__div__form__div--featured-save-delete">
+                      
+                      
+                      <div>
+                        <input type="checkbox" placeholder="Hello, World" id="featured" name="featured" class="main__admin__div__page__add--product__div__form__div__input--checkbox">
+                        <label for="featured" class="main__admin__div__page__add--product__div__form__div__label">Featured</label>
+                      </div>
+                      <div class="main__admin__div__page__add--product__div__form__div--featured-save-delete__button--div">
+                        <button id="update" class="main__admin__div__page__add--product__div__form__div__button">Update</button>
+                        <div class="delete-container">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    </form>
+
+            </div>
+          </div>
+
+          <div class="main__admin__div__page__edit--product__div form__container">
           
-          <div>
             <!-- <label for="image">Image</label>
             <input type="file" id="image" name="files.image"> -->
-              <div id="display" style="border: 1px solid black; width: 200px; height: 200px; background-size: contain; background-position-x: center;background-position-y: center; background-repeat: no-repeat;">
-                <!-- <p>Loading...</p> -->
-              </div>
-          </div>
-          <div>
-            <label for="title">Title</label>
-            <input id="title">
-          </div>
-          <div>
-            <label for="price">Price</label>
-            <input id="price">
-          </div>
-          <div>
-            <label for="description">Description</label>
-            <textarea id="description"></textarea>
-          </div>
 
-          <input id="id" type="hidden">
-          <div>
-            <button id="update">Update</button>
+            <div id="display" style="border: 1px solid black; width: 200px; height: 200px; background-size: contain; background-position-x: center;background-position-y: center; background-repeat: no-repeat;">
+              <!-- <p>Loading...</p> -->
+            </div>
           </div>
-          <div class="delete-container">
-          </div>
-          <div class="message-container"></div>
-        </form>
-      </div>
+        </div>
+
+
+    </div>
+<!-- ////// -->
+
     </main>
 
     <footer class="footer__admin">
