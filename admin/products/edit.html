@@ -21,7 +21,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main__admin">
       <div class="edit-container">
         <div class="crumbs">
           <a href="../products.html"><p class="crumbs">Products</p></a>
@@ -34,7 +34,7 @@
 
 
         <div>
-          <h2 class="main__admin__h2" id="edit">Editing "Titlename"</h2>
+          <h2 class="main__admin__h2 title-name" id="edit">Editing...</h2>
         </div>
 
 <!-- ////// -->
@@ -44,15 +44,19 @@
             <div class="">
               <div class="message-container">
               </div>
+
                 <form class="main__admin__div__page__edit--product__div__form" action=" edit-form">
-                    <div class="main__admin__div__page__edit--product__div__form__div">
+                    
+                  <div class="main__admin__div__page__edit--product__div__form__div">
                       <label for="title" class="main__admin__div__page__add--product__div__form__div__label">Title</label>
                       <input id="title" class="main__admin__div__page__add--product__div__form__div__input">
                     </div>
+
                     <div class="main__admin__div__page__edit--product__div__form__div">
                       <label for="price" class="main__admin__div__page__add--product__div__form__div__label">Price</label>
                       <input id="price" class="main__admin__div__page__add--product__div__form__div__input">
                     </div>
+
                     <div class="main__admin__div__page__edit--product__div__form__div">
                       <label for="description" class="main__admin__div__page__add--product__div__form__div__label">Description</label>
                       <textarea id="description" class="main__admin__div__page__edit--product__div__form__div__textarea"></textarea>
@@ -77,14 +81,14 @@
 
             </div>
           </div>
-
-          <div class="main__admin__div__page__edit--product__div form__container">
-          
-            <!-- <label for="image">Image</label>
-            <input type="file" id="image" name="files.image"> -->
-
-            <div id="display" style="border: 1px solid black; width: 200px; height: 200px; background-size: contain; background-position-x: center;background-position-y: center; background-repeat: no-repeat;">
-              <!-- <p>Loading...</p> -->
+          <div class="main__admin__div__page__add--product__div  image--div">
+            <div style=" 
+            background-color: #c159411b;  border: 1px solid #C15841; border-radius: 4px;  ">
+              <div id="display">
+                <!-- <p class="displayImage">
+                  Preview image
+                </p> -->
+              </div>
             </div>
           </div>
         </div>

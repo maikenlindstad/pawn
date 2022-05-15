@@ -30,9 +30,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-p{
-  // cursor: pointer;
-}
+
 .preview {
   width: 50px;
 }
@@ -248,6 +246,7 @@ a {
 .main__admin__div__page__edit--product__div__form__div__input--checkbox {
   color: #C15841 ;
   font-weight: 400;
+  // z-index: 10;
 }
 
 .main__admin__div__page__add--product__div__form__div__button {
@@ -285,8 +284,24 @@ a {
   font-family: sans-serif;
 }
 
-.main__admin__div__page__add--product__div__form__div__input[type=file] {
-  border:none;
+.main__admin__div__page__add--product__div__form__div__label--image {
+  border: #C15841 1px solid;
+  background-color: white;
+  width: 100px;
+  color: #C15841;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+  box-shadow: #a491914c 1px 1px 10px;
+  // z-index: 1;
+}
+.main__admin__div__page__add--product__div__form__div__label--image:hover {
+  background-color: #F6EEEE;;
+}
+
+
+input[type="file"] {
+  display: none;
 }
 
 
@@ -305,7 +320,6 @@ a {
 
 .displayPlaceholder {
   color: #C15841;
-  cursor: none;
 }
 
 //footer admin section

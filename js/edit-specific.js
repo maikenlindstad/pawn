@@ -27,8 +27,9 @@ const description = document.querySelector("#description");
 const idInput = document.querySelector("#id");
 const message = document.querySelector(".message-container");
 const loading = document.querySelector(".loading");
-const image = document.querySelector("#image");
+// const image = document.querySelector("displayImage");
 const display = document.querySelector("#display");
+const titleName = document.querySelector(".title-name")
 
 
 
@@ -56,6 +57,8 @@ const productUrl = baseUrl + "api/products?populate=*";
 
 
     const product = json.data;
+
+    titleName.innerHTML = `Editing <i>"${json.data.attributes.title}"</i>`;
 
     display.style.backgroundImage = `
         url(https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url})`;
@@ -102,7 +105,7 @@ function submitForm(event) {
   };
 
   updateProduct(titleValue, priceValue, descriptionValue, idValue);
-
+  window.location.reload()
 }
 
 async function updateProduct(title, price, description, id) {
