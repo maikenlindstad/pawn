@@ -5,14 +5,14 @@ export default function createMenu() {
   const { pathname } = document.location;
   // console.log(pathname);
   const username = getUserName();
-  const container = document.querySelector(".header__admin");
+  const container = document.querySelector(".global__header");
   const publicMenu = document.querySelector(".menu-container-public");
 
 
   if (pathname === "/admin/products/edit.html") {
 
     container.innerHTML = `
-      <div class="header__admin__menu">
+      <div class="global__header__admin__menu">
         <div class="header__admin__menu__div">
           <p>Logged in as ${username}</p>
         </div>
@@ -46,7 +46,7 @@ export default function createMenu() {
     <a href="/" class="${pathname === '/index.html' ? 'active' : '' || pathname === '/products.html' ? 'active' : '' || pathname === '/product-specific.html' ? 'active' : '' || pathname === '/cart.html' ? 'active' : ''}">Private</a>
     `;
     container.innerHTML = `
-      <div class="header__admin__menu">
+      <div class="global__header__admin__menu">
         <div class="header__admin__menu__div">
           <p>Logged in as ${username}</p>
         </div>

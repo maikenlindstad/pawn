@@ -58,7 +58,7 @@ const productUrl = baseUrl + "api/products?populate=*";
 
     const product = json.data;
 
-    titleName.innerHTML = `Editing <i>"${json.data.attributes.title}"</i>`;
+    titleName.innerHTML = `Edit form`;
 
     display.style.backgroundImage = `
         url(https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url})`;
@@ -105,7 +105,7 @@ function submitForm(event) {
   };
 
   updateProduct(titleValue, priceValue, descriptionValue, idValue);
-  window.location.reload()
+
 }
 
 async function updateProduct(title, price, description, id) {

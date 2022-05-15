@@ -8,12 +8,54 @@
     <title>Pawn | Admin | Welcome</title>
   </head>
 
-  <body>
+  <body class="admin__body">
     <div class="menu-container-public no-display">
     </div>
 
-    <header class="header__admin">
+
+
+
+
+    <header class="global__header admin__header">
+
+      <div class="global__header__admin__menu">
+        <div class="header__admin__menu__div">
+          <p>Logged in as ${username}</p>
+        </div>
+        <div class="header__admin__menu__div">
+          <a href="../index.html"><img src="../images/logo.png" alt="Pawn.com logo" style="width:100px"></a>
+        </div>
+        <div class="header__admin__menu__div">
+          <nav class="header__admin__menu__div__nav">
+            <ul class="header__admin__menu__div__nav__ul">
+              <li class="header__admin__menu__div__nav__ul--li">
+                <a href="welcome.html" class="header__admin__menu__div__nav__ul--li__a ${pathname === "/admin/welcome.html" ? "active" : ""}">Welcome</a>
+              </li>
+              <li class="header__admin__menu__div__nav__ul--li">
+                <a href="products.html" class="header__admin__menu__div__nav__ul--li__a ${pathname === "/admin/products.html" ? "active" : ""}">Products</a>
+              </li>
+              <li class="header__admin__menu__div__nav__ul--li">
+                <a href="order.html" class="header__admin__menu__div__nav__ul--li__a ${pathname === "/admin/order.html" ? "active" : ""}">Order</a>
+              </li>
+              <li class="header__admin__menu__div__nav__ul--li">
+                <a href="" class="header__admin__menu__div__nav__ul--li__a" id="logout">Logout</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+
+
     </header>
+
+
+
+
+
+
+
     <main class="main__admin">
       <!-- <div class="welcome-section"> -->
         <h1 class="main__admin__h1">Welcome</h1>

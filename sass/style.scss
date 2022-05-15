@@ -1,22 +1,12 @@
-html,
-body {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-  
-body {
-  margin: 0;
-  background-color: #F6EEEE;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-}
+@import "partials/variables";
+@import "partials/base";
 
 .tabs {
   list-style: none;
   cursor: pointer;
 
 }
+
 .page {
   display: none;
 }
@@ -24,7 +14,6 @@ body {
 .is-active {
   display: block;
 }
-
 
 .products-list {
   display: flex;
@@ -39,63 +28,7 @@ body {
   display: none;
 }
 
-// colors general
-$colors: (
-  dark30: #303030, 
-  white: white,
-);
 
-//header global
-.header__admin {
-  border-bottom: #303030 1px solid;
-  width: 95%;
-  margin: auto;
-}
-
-//header admin section
-.header__admin__menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__admin__menu__div__nav__ul {
-  padding-inline-start: 0;
-  display: flex;
-  list-style: none;
-}
-
-.header__admin__menu__div__nav__ul--li {
-  margin: 0 5px;
-}
-
-.header__admin__menu__div__nav__ul--li__a {
-  text-decoration: none;
-  color: map-get($colors, dark30);
-}
-
-.header__admin__menu__div__nav__ul--li__a:hover {
-  text-decoration: underline;
-}
-
-.active {
-  text-decoration: underline;
-
-}
-
-//main global 
-.main__admin,
-.main__public {
-  flex: 1 0 auto;
-  width: 95%;
-  margin: auto;
-}
-
-.main__admin__h1, 
-.main__admin__h2,
-.main__admin__h3{
-  color: #C15841;
-}
 
 
 
@@ -112,17 +45,17 @@ $colors: (
 .warning,
 .success {
   border-radius: 4px;
-  color: white;
+  color: getColor(white);
   padding: 2px;
 }
 
 .warning {
-  background-color: #C15841;
+  background-color: getColor(peach);
  
 }
 
 .success {
-  background-color: rgb(77, 121, 77);
+  background-color: getColor(successGreen);
 }
 
 
@@ -133,11 +66,11 @@ $colors: (
 }
 
 .main__admin__div__dynamic-page-section--tab {
-  background-color: #c1594184;
+  background-color: getColor(softPeach);
   width: 100px;
   border-radius: 2px;
-  color: white;
-  box-shadow: #a49191 1px 1px 10px;
+  color: getColor(white);
+  box-shadow: getColor(smokeyGrey) 1px 1px 10px;
   text-align: center;
   margin: 10px;
 }
@@ -147,26 +80,26 @@ $colors: (
 .main__admin__div__page__product-list__a__div {
   display: flex;
   justify-content: space-between;
-  border-top:#C15841 solid 1px;
+  border-top: getColor(peach) solid 1px;
   align-items: center;
   // max-width: 1000px;
   // margin: auto;
 }
 
 .border-bottom {
-  border-bottom:#303030 solid 1px;
+  border-bottom: getColor(dark30) solid 1px;
 
 }
 
 .main__admin__div__dynamic-page-section--tab.is-active {
-background-color: #C15841;
+background-color: getColor(peach);
 }
 
 
 .main__admin__div__page__product-list__a__div:hover {
-  background-color: #c1594184;
-  background-color: #30303021;
-  background-color: #c159411b;
+  background-color: getColor(softPeach);
+  background-color: getColor(smudgeBlack);
+  background-color: getColor(smudgedPeach);
 
 }
 
@@ -174,8 +107,8 @@ background-color: #C15841;
 .main__admin__div__page__product-list__a__div a
  {
   padding: 30px;
-  color: #303030;
-  color: #C15841;
+  color: getColor(dark30);
+  color: getColor(peach);
 }
 
 .main__admin__div__page__product-list__a__div img {
@@ -244,34 +177,33 @@ a {
 .main__admin__div__page__edit--product__div__form__div__label,
 .main__admin__div__page__edit--product__div__form__div__input,
 .main__admin__div__page__edit--product__div__form__div__input--checkbox {
-  color: #C15841 ;
+  color: getColor(peach);
   font-weight: 400;
   // z-index: 10;
 }
 
 .main__admin__div__page__add--product__div__form__div__button {
-  border: #C15841 2px solid;
+  border:  getColor(peach) 2px solid;
   cursor: pointer;
-  color: white;
+  color: getColor(white);
   margin: 2px 10px;
   width: 80px;
   padding: 2px;
   border-radius: 2px;
-  // box-shadow: #a49191 1px 1px 10px;
-  background-color: #c159411b;
+  background-color:  getColor(smudgedPeach);
   font-weight: 400;
-  color: #C15841;
+  color: getColor(peach);
 }
 
 .main__admin__div__page__add--product__div__form__div__button:hover {
-  background-color: #C15841;
-  color: white;
+  background-color:  getColor(peach);
+  color: getColor(white);
 }
 
 .main__admin__div__page__add--product__div__form__div__input,
 .main__admin__div__page__add--product__div__form__div__textarea,
 .main__admin__div__page__edit--product__div__form__div__textarea {
-  border:#C15841 1px solid;
+  border:  getColor(peach) 1px solid;
   width: 280px;
 }
 
@@ -280,23 +212,22 @@ a {
   max-width: 500px;
   width: 100%;
   height: 175px;
-  color: #C15841;
-  font-family: sans-serif;
+  color:  getColor(peach);
+  font-family: getFont(primary);
 }
 
 .main__admin__div__page__add--product__div__form__div__label--image {
-  border: #C15841 1px solid;
-  background-color: white;
+  border:  getColor(peach) 1px solid;
+  background-color: getColor(white);
   width: 100px;
-  color: #C15841;
+  color:  getColor(peach);
   text-align: center;
   padding: 4px;
   cursor: pointer;
-  box-shadow: #a491914c 1px 1px 10px;
-  // z-index: 1;
+  box-shadow:  getColor(smokeyGrey) 1px 1px 10px;
 }
 .main__admin__div__page__add--product__div__form__div__label--image:hover {
-  background-color: #F6EEEE;;
+  background-color:  getColor(smokeyWhite);
 }
 
 
@@ -319,31 +250,120 @@ input[type="file"] {
 }
 
 .displayPlaceholder {
-  color: #C15841;
+  color:  getColor(peach);
 }
 
-//footer admin section
-.footer__admin {
-  background-color: map-get($colors, dark30);
-  color: white;
+.featured-products-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 40px 0;
-  flex-shrink: 0;
+  max-width: 1000px;
+  margin: auto;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.product-card {
+  width: 220px;
 }
 
-.footer__private {
-  background-color: black;
-  color: white;
+.product-information h3,
+.product-information p {
+  color: getColor(white);
 }
 
-.footer__admin__div__ul {
-  padding-inline-start: 0;
-  list-style: none;
-  margin: 0;
+.product-information h3:hover {
+  text-decoration: underline;
 }
 
-.footer__admin__div__h4 {
-  margin: 0;
+.product-button {
+  background-color: getColor(successGreen);
+  padding: 4px 10px;
+  text-align: center;
+  width: 100px;
+  border-radius: 4px;
   text-transform: uppercase;
+}
+
+.product-button:hover {
+  // box-shadow: getColor(smokeyGrey) 1px 1px 5px 2px;
+  // box-shadow: getColor(softPeach) 1px 1px 5px 2px;
+  background-color: getColor(hoverGreen);
+  background: darken(getColor(successGreen), 28%);
+}
+
+.product-button-div {
+  display: flex;
+  justify-content: center;
+  color: getColor(white);
+}
+
+.commercial {
+  background-image: url("../images/queens-gambit-1-e1606160896388.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.commercial h3 {
+  color: getColor(white);
+  font-size: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.menu-container-public {
+  text-align: right;
+  padding: 10px;
+}
+.menu-container-public a{
+  color: getColor(white);
+  margin: 10px;
+}
+
+.category-banner {
+  // height: 50px;
+  width: 100%;
+  background-color: getColor(peach);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.category-banner div {
+  display: flex;
+}
+
+.category-banner-div {
+  background-color: getColor(white);
+  width: 150px;
+  height: 30px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+.category-banner-div h2 {
+  color: getColor(peach);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+.heading {
+  color: getColor(white);
+}
+
+.client__main__content {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
 }

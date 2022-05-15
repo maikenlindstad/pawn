@@ -1,7 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
-import createMenu from "./components/common/createMenu.js";
-createMenu();
+// import createMenu from "./components/common/createMenu.js";
+// createMenu();
 
 const productsUrl = baseUrl + "api/products?populate=*";
 
@@ -25,11 +25,16 @@ const productsUrl = baseUrl + "api/products?populate=*";
 
       const product = json.data[i];
       container.innerHTML += `
-      <a href="product-specific.html?id=${product.id}" style="display: ${displayOption}">
-        <img src="https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url}" alt=${product.attributes.title}>
-        <h3>${product.attributes.title}</h3>
-        <p>${product.attributes.description}</p>
-        <p>${product.attributes.price},-</p>
+      <a href="product-specific.html?id=${product.id}" style="display: ${displayOption}" class="product-card">
+        <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url})">
+        </div>
+        <div class="product-information">
+          <h3>${product.attributes.title}</h3>
+          <p>${product.attributes.price},-</p>
+        </div>
+        <div class="product-button-div">
+          <p class="product-button">View</p>
+        </div>
       </a>`;
     }
   }
