@@ -36,7 +36,7 @@ function submitForm(event) {
 
 async function doLogin(username, password) {
 
-  const url = baseUrl + "api/auth/local";
+  const url = baseUrl + "auth/local";
 
   const data = JSON.stringify({ identifier: username, password: password });
 

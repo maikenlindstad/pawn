@@ -12,7 +12,7 @@ if (!id) {
   document.location.href = "products.html";
 }
 
-const productUrl = baseUrl + "api/products/" + id + "?populate=*";
+const productUrl = baseUrl + "products/" + id + "?populate=*";
 
 // // + "?populate=*"
 

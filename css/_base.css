@@ -29,11 +29,3 @@ header {
   height: 20px;
 }
 
-.hero-banner {
-  background-image: url("../images/afsg0nb68l061.jpg");
-  height: 650px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  background-position-x: center;
-}

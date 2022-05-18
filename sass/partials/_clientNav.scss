@@ -1,0 +1,35 @@
+input#hamburger-menu {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+
+
+#hamburger-menu:checked ~ .client__header__div__nav {
+  display: block;
+}
+
+.client__header__div__nav {
+  // display: none;
+  position: absolute;
+}
+
+.client__header__div__nav__ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.client__header__div__nav__ul__li {
+  padding: 0 10px;
+}
+
+.client__header__div__nav__ul__li__a {
+  color: white;
+  font-size: 1.6rem;
+}

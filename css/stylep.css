@@ -19,10 +19,3 @@ color: grey;
 .banner-2 {
 background-color: #303030;
 }
-
-.hero-banner {
-display: flex;
-justify-content: flex-start;
-align-items: flex-end;
-padding: 50px;
-}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b054aa0f4f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Pawn | Home</title>
   </head>
@@ -23,37 +24,95 @@
 
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <header class="client__header">
 
-      <div>
-        <img src="images/icons/hamburger-menu.png" alt="hamburger-menu" class="icon">
-        <nav>
-          <ul>
-            <li><a href="products.html">All products</a></li>
-            <li>Books</li>
-            <li>Chess sets</li>
-            <li>Interior</li>
-            <li>Magazines</li>
-            <li>Courses</li>
-            <li>Fide.com</li>
+      <div class="client__header__div">
+
+        
+        <label for="hamburger-menu"><i class="icon fa-solid fa-bars"></i></label>
+        <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
+
+
+        <nav class="client__header__div__nav">
+
+          <ul class="client__header__div__nav__ul">
+
+            <li class="client__header__div__nav__ul__li"><a href="index.html" class="client__header__div__nav__ul__li__a">Home</a></li>
+            <li class="client__header__div__nav__ul__li"><a href="products.html" class="client__header__div__nav__ul__li__a">Products</a></li>
+            <li class="client__header__div__nav__ul__li"><a href="" class="client__header__div__nav__ul__li__a">About us</a></li>
+            <li class="client__header__div__nav__ul__li"><a href="" class="client__header__div__nav__ul__li__a">Contact</a></li>
+
           </ul>
+
         </nav>
+
       </div>
+
       <div>
-        <a href="index.html"><img src="images/logo.png" alt="Pawn.com logo" style="width:100px"></a>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Pawn.com logo" style="width:100px; margin: 0;">
+        </a>
       </div>
+
       <div>
-        <img src="images/icons/user.png" alt="user icon" class="icon">
-        <img src="images/icons/cart.png" alt="cart icon" class="icon">
+        <i class="icon fa-solid fa-user"></i>
+        <!-- <img src="images/icons/user.png" alt="user icon" class="icon"> -->
+        <i class="icon fa-solid fa-cart-shopping"></i>
+        <!-- <img src="images/icons/cart.png" alt="cart icon" class="icon"> -->
       </div>
       
     </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <main>
       <div class="hero-banner">
         <div class="quote">
-          <p class="quote-p">"Chess isn't always competitive."</p>
-          <p class="quote-cite">- The Queens Gambit</p>
+          <div>
+            <p class="quote-p">"Chess isn't always competitive."</p>
+            <p class="quote-cite">- The Queens Gambit</p>
+          </div>
         </div>
       </div>
 
@@ -92,13 +151,12 @@
     </div>
       <div class="commercial">
         <a href="https://www.netflix.com/watch/81093610?trackId=255824129" target="_blank"><h3>Watch the queens Gambit on Netflix</h3></a>
-      </div>
-  
-    
+      </div>    
     </main>
 
     <footer class="footer__client">
     </footer>
+    
     <script src="js/components/common/createClientMenu.js" type="module"></script>
     <!-- <script src="javascript/components/common/global.js" type="module"></script> -->
     <script src="js/featured-products.js" type="module"></script>

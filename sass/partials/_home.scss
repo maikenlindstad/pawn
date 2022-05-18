@@ -1,0 +1,47 @@
+.hero-banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 50px;
+  }
+
+.hero-banner {
+  background-image: url("../images/afsg0nb68l061.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+
+.quote-p {
+  font-family: sans-serif;
+  transform: scaleY(1.6);
+  color: #C15841;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.quote-cite {
+  font-family: sans-serif;
+  color: #C15841;
+  font-weight: 400;
+  font-size: 1.8em;
+  font-weight: 400;
+  transform: scaleY(1.4);
+}
+
+.quote {
+  position: relative;
+  bottom: 20;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.349);
+  border: solid 10px #C15841;
+}
+
+.quote div {
+  margin-left: 100px;
+}

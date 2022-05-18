@@ -1,5 +1,8 @@
 @import "partials/variables";
 @import "partials/base";
+@import "partials/typography";
+@import "partials/home";
+@import "partials/clientNav";
 
 .tabs {
   list-style: none;
@@ -266,6 +269,11 @@ input[type="file"] {
   width: 220px;
 }
 
+.product-image {
+  background-position-x: center;
+  background-position-y: center;
+}
+
 .product-information h3,
 .product-information p {
   color: getColor(white);
@@ -341,6 +349,7 @@ input[type="file"] {
 }
 
 .category-banner-div {
+  cursor: pointer;
   background-color: getColor(white);
   width: 150px;
   height: 30px;

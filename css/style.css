@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap");
 html,
 body {
   height: 100%;
@@ -14,7 +20,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  background: repeating-linear-gradient(65deg, #303030, #303030 2px, #303030 2px, #303030f7 4px);
 }
 
 .admin__body {
@@ -24,6 +29,8 @@ body {
 
 .client__body {
   font-family: sans-serif;
+  background: repeating-linear-gradient(65deg, #303030, #303030 2px, #303030 2px, #303030f7 4px);
+  background-size: cover;
 }
 
 .global__header, .admin__header, .client__header, .menu-container-public {
@@ -31,15 +38,7 @@ body {
   margin: auto;
 }
 
-.admin__header {
-  border-bottom: #303030 1px solid;
-}
-
-.menu-container-public {
-  border-bottom: white 1px solid;
-}
-
-.global__header__admin__menu {
+.global__header__admin__menu, .client__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +48,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.admin__header {
+  border-bottom: #303030 1px solid;
+}
+
+.client__header {
+  padding: 10px 0;
+}
+
+.menu-container-public {
+  border-bottom: white 1px solid;
 }
 
 .main__admin,
@@ -124,6 +135,122 @@ body {
 .footer__client__div__h4 {
   margin: 0;
   text-transform: uppercase;
+}
+
+.icon {
+  color: #C15841;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p, a {
+  margin: 15px 0;
+}
+
+/* h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  transform: scaleY(2);
+  font-weight: 400;
+  margin: 0;
+} */
+p {
+  font-family: sans-serif;
+  margin: 5px 0;
+}
+
+.hero-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 50px;
+}
+
+.hero-banner {
+  background-image: url("../images/afsg0nb68l061.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.quote-p {
+  font-family: sans-serif;
+  -webkit-transform: scaleY(1.6);
+          transform: scaleY(1.6);
+  color: #C15841;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.quote-cite {
+  font-family: sans-serif;
+  color: #C15841;
+  font-weight: 400;
+  font-size: 1.8em;
+  font-weight: 400;
+  -webkit-transform: scaleY(1.4);
+          transform: scaleY(1.4);
+}
+
+.quote {
+  position: relative;
+  bottom: 20;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.349);
+  border: solid 10px #C15841;
+}
+
+.quote div {
+  margin-left: 100px;
+}
+
+input#hamburger-menu {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+#hamburger-menu:checked ~ .client__header__div__nav {
+  display: block;
+}
+
+.client__header__div__nav {
+  position: absolute;
+}
+
+.client__header__div__nav__ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+}
+
+.client__header__div__nav__ul__li {
+  padding: 0 10px;
+}
+
+.client__header__div__nav__ul__li__a {
+  color: white;
+  font-size: 1.6rem;
 }
 
 .tabs {
@@ -401,6 +528,11 @@ input[type="file"] {
   width: 220px;
 }
 
+.product-image {
+  background-position-x: center;
+  background-position-y: center;
+}
+
 .product-information h3,
 .product-information p {
   color: white;
@@ -491,6 +623,7 @@ input[type="file"] {
 }
 
 .category-banner-div {
+  cursor: pointer;
   background-color: white;
   width: 150px;
   height: 30px;

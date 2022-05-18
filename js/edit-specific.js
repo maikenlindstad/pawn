@@ -19,7 +19,7 @@ if (!token) {
   location.href = "../../login.html"
 }
 
-const productsUrl = baseUrl + "api/products/" + id + "?populate=*";
+const productsUrl = baseUrl + "products/" + id + "?populate=*";
 const form = document.querySelector("form");
 const title = document.querySelector("#title");
 const price = document.querySelector("#price");
@@ -37,7 +37,7 @@ const titleName = document.querySelector(".title-name")
 console.log(productsUrl);
 
 
-const productUrl = baseUrl + "api/products?populate=*";
+const productUrl = baseUrl + "products?populate=*";
 
 
 
@@ -109,7 +109,7 @@ function submitForm(event) {
 }
 
 async function updateProduct(title, price, description, id) {
-  const url = baseUrl + "api/products/" + id;
+  const url = baseUrl + "products/" + id;
 
   const data = JSON.stringify({
     data: {

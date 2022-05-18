@@ -1,7 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 
-const productsUrl = baseUrl + "api/products?populate=*";
+const productsUrl = baseUrl + "products?populate=*";
 
 (async function () {
 

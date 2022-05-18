@@ -7,7 +7,7 @@ createMenu();
 // const params = new URLSearchParams(queryString);
 // const id = params.get("id");
 
-const productUrl = baseUrl + "api/products/?populate=*";
+const productUrl = baseUrl + "products/?populate=*";
 
 (async function () {
   try {

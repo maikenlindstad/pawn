@@ -3,7 +3,7 @@ import displayMessage from "./components/common/displayMessage.js";
 // import createMenu from "./components/common/createMenu.js";
 // createMenu();
 
-const productsUrl = baseUrl + "api/products?populate=*";
+const productsUrl = baseUrl + "products?populate=*";
 
 (async function () {
 

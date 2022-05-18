@@ -13,7 +13,7 @@ export default function deleteButton(id) {
     const doDelete = confirm("Are you sure you want to delete this?");
 
     if (doDelete) {
-      const url = baseUrl + "api/products/" + id;
+      const url = baseUrl + "products/" + id;
 
       const token = getToken();
 
