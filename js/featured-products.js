@@ -29,7 +29,7 @@ const productsUrl = baseUrl + "products?populate=*";
         <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url})">
         </div>
         <div class="product-information">
-          <h2>${product.attributes.title}</h2>
+          <h3>${product.attributes.title}</h3>
           <p>${product.attributes.price},-</p>
         </div>
         <div class="product-button-div">
