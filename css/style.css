@@ -531,10 +531,12 @@ input[type="file"] {
 .product-image {
   background-position-x: center;
   background-position-y: center;
+  margin-bottom: 20px;
 }
 
-.product-information h3,
+.product-information h2,
 .product-information p {
+  font-size: 1rem;
   color: white;
 }
 
@@ -637,12 +639,13 @@ input[type="file"] {
   margin: 10px;
 }
 
-.category-banner-div h2 {
+.category-banner-div p {
   color: #303030;
   color: #9F3721;
   text-transform: uppercase;
   font-size: 1rem;
   margin-left: 15px;
+  font-weight: 600;
 }
 
 .heading {
