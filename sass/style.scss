@@ -256,14 +256,15 @@ input[type="file"] {
   color:  getColor(peach);
 }
 
-.featured-products-section {
+.featured-products-section,
+.products-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1000px;
   margin: auto;
   gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .product-card {
   width: 220px;
@@ -377,5 +378,14 @@ input[type="file"] {
 .client__main__content {
   max-width: 1200px;
   width: 100%;
+  margin: auto;
+}
+
+.product-image {
+  border: #9F3721 1px solid;
+}
+
+.input-section {
+  max-width: 1000px;
   margin: auto;
 }
