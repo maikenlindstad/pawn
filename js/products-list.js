@@ -6,6 +6,7 @@ import displayMessage from "./components/common/displayMessage.js";
 // const queryString = document.location.search;
 // const params = new URLSearchParams(queryString);
 // const id = params.get("id");
+// import { searchProducts } from "./ui/search.js";
 
 const productUrl = baseUrl + "products?populate=*";
 
@@ -19,7 +20,7 @@ const productUrl = baseUrl + "products?populate=*";
 
     for (let i = 0; i < json.data.length; i++) {
       const product = json.data[i];
-      console.log(product)
+      // console.log(product)
       productsContainer.innerHTML += `
       <a href="product-specific.html?id=${product.id}" class="product-card">
         <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
@@ -33,8 +34,17 @@ const productUrl = baseUrl + "products?populate=*";
         </div>
       </a>
       `;
+      // searchProducts();
+      const productTitle = product.attributes.title;
+      console.log(productTitle);
+
 
     }
+
+    // searchProducts.onkeyup = function (event) {
+    //   const searchValue = event.target.value.trim().toLowerCase();
+    //   // const filteredProducts = 
+    // }
 
 
   } catch (error) {
