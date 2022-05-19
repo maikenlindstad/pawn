@@ -350,7 +350,7 @@ input[type="file"] {
 .category-banner div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 
 
 }
@@ -364,7 +364,7 @@ input[type="file"] {
   align-items: center;
   border-radius: 2px;
   margin: 10px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .category-banner-div p {
