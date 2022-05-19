@@ -14,24 +14,23 @@ if (!id) {
 
 const productUrl = baseUrl + "products/" + id + "?populate=*";
 
-// // + "?populate=*"
 
 
 (async function () {
   try {
     const response = await fetch(productUrl);
     const details = await response.json();
+    console.log(details);
 
-    document.title = "Pawn | Product | " + details.data.attributes.title
-
-    console.log(details.data);
+    document.title = "Pawn | Product | " + details.data.attributes.title;
 
 
     const container = document.querySelector(".product-specific");
+
     container.innerHTML = "";
 
     container.innerHTML += `
-    <img src="https://pawn-api.herokuapp.com${details.data.attributes.image.data[0].attributes.url}" alt="${details.data.attributes.title}">
+    <img src="${details.data.attributes.image.data[0].attributes.url}" alt="${details.data.attributes.title}">
       <h2>${details.data.attributes.title}</h2>
       <p>${details.data.attributes.description}</p>`;
 

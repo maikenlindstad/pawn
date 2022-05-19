@@ -35,24 +35,28 @@ header.innerHTML = `
 
 categoryBanner.innerHTML = `
 <div>
-<div class="category-banner-div">
-  <p>Books</p>
+  <div class="category-banner-div">
+    <p>Books</p>
+  </div>
+  <div class="category-banner-div">
+    <p>Chess sets</p>
+  </div>
 </div>
-<div class="category-banner-div">
-  <p>Chess sets</p>
-</div>
-<div class="category-banner-div">
-  <p>Interior</p>
-</div>
-</div>
+
 <div>
-<div class="category-banner-div">
-  <p>Magazines</p>
+  <div class="category-banner-div">
+    <p>Interior</p>
+  </div>
+  <div class="category-banner-div">
+    <p>Magazines</p>
+  </div>
 </div>
-<div class="category-banner-div">
-  <p>Courses</p>
-</div>
-<div class="category-banner-div">
-  <p>Fide.com</p>
-</div>
+
+<div>
+  <div class="category-banner-div">
+    <p>Courses</p>
+  </div>
+  <div class="category-banner-div">
+    <p>Fide.com</p>
+  </div>
 </div>`;

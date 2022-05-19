@@ -61,7 +61,7 @@ const productUrl = baseUrl + "products?populate=*";
     titleName.innerHTML = `Edit form`;
 
     display.style.backgroundImage = `
-        url(https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url})`;
+        url(${product.attributes.image.data[0].attributes.url})`;
 
     title.value = json.data.attributes.title;
     price.value = json.data.attributes.price;

@@ -232,6 +232,8 @@ label {
 .client__header__div__nav {
   display: none;
   position: absolute;
+  top: 30px;
+  left: 80px;
 }
 
 .client__header__div__nav__ul {
@@ -248,6 +250,10 @@ label {
   padding: 10px 0;
 }
 
+.client__header__div__nav__ul__li {
+  padding: 0 5px;
+}
+
 .client__header__div__nav__ul__li__a {
   color: white;
   font-size: 1.4rem;
@@ -255,6 +261,36 @@ label {
 
 .client__header__div__nav__ul__li__a.active {
   background-color: #C15841;
+}
+
+@media only screen and (max-width: 1075px) {
+  .client__header__div__nav__ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .client__header__div__nav {
+    position: absolute;
+    background: repeating-linear-gradient(65deg, #303030, #303030 2px, #303030 2px, #303030f7 4px);
+    top: 95px;
+    left: 0px;
+    width: 100%;
+  }
+  .client__header__div__nav__ul__li__a {
+    color: #C15841;
+    font-size: 1rem;
+  }
+  .client__header__div__nav__ul__li__a.active {
+    color: white;
+  }
+  .hero-banner {
+    font-size: 0.2rem;
+  }
+  .category-banner {
+    display: none;
+  }
 }
 
 .tabs {
@@ -618,8 +654,6 @@ input[type="file"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 100px;
 }
 
@@ -627,6 +661,11 @@ input[type="file"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .category-banner-div {
@@ -642,6 +681,9 @@ input[type="file"] {
           align-items: center;
   border-radius: 2px;
   margin: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .category-banner-div p {
@@ -663,12 +705,32 @@ input[type="file"] {
   margin: auto;
 }
 
-.product-image {
-  border: #9F3721 1px solid;
-}
-
 .input-section {
   max-width: 1000px;
   margin: auto;
+}
+
+@media only screen and (max-width: 510px) {
+  .category-banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .category-banner div {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .featured-products-section,
+  .products-section {
+    gap: 5px;
+  }
+  .featured-products-section {
+    max-width: 270;
+  }
+  .product-card, .product-image {
+    max-width: 170px;
+  }
+  .product-image {
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

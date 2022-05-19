@@ -13,7 +13,7 @@ const featured = document.querySelector("#featured");
 const image = document.querySelector("#image");
 const message = document.querySelector(".message-container");
 
-const url = baseUrl + "api/products";
+const url = baseUrl + "products";
 
 
 let isFeatured = false;

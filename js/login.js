@@ -12,10 +12,6 @@ const message = document.querySelector(".message-container");
 
 
 
-
-
-
-
 form.addEventListener("submit", submitForm);
 
 function submitForm(event) {

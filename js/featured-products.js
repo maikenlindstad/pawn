@@ -26,7 +26,7 @@ const productsUrl = baseUrl + "products?populate=*";
       const product = json.data[i];
       container.innerHTML += `
       <a href="product-specific.html?id=${product.id}" style="display: ${displayOption}" class="product-card">
-        <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url})">
+        <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
         </div>
         <div class="product-information">
           <h3>${product.attributes.title}</h3>

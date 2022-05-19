@@ -19,7 +19,7 @@ const productsUrl = baseUrl + "products?populate=*";
       container.innerHTML += `
         <a href="products/edit.html?id=${product.id}" class="main__admin__div__page__products-list__a">
           <div class="main__admin__div__page__product-list__a__div">
-            <img class="preview" src="https://pawn-api.herokuapp.com${product.attributes.image.data[0].attributes.url}" alt="${product.attributes.title}">
+            <img class="preview" src="${product.attributes.image.data[0].attributes.url}" alt="${product.attributes.title}">
             <p>Title: ${product.attributes.title}</p>
             <p>Price: ${product.attributes.price} kr</p>
           </div>
