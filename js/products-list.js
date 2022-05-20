@@ -1,55 +1,89 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
-// import createMenu from "./components/common/createMenu.js";
-// createMenu();
-
-// const queryString = document.location.search;
-// const params = new URLSearchParams(queryString);
-// const id = params.get("id");
-// import { searchProducts } from "./ui/search.js";
 
 const productUrl = baseUrl + "products?populate=*";
 
-(async function () {
+const productsContainer = document.querySelector(".products-section");
+const search = document.querySelector(".search");
+
+async function renderProducts() {
   try {
     const response = await fetch(productUrl);
-    const json = await response.json();
-
-    const productsContainer = document.querySelector(".products-section");
+    const results = await response.json();
     productsContainer.innerHTML = "";
 
-    for (let i = 0; i < json.data.length; i++) {
-      const product = json.data[i];
-      // console.log(product)
+    const productsToRender = results.data;
+
+    productsToRender.forEach(function (product) {
+
       productsContainer.innerHTML += `
       <a href="product-specific.html?id=${product.id}" class="product-card">
-        <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
-        </div>
-        <div class="product-information">
-          <h3>${product.attributes.title}</h3>
-          <p>${product.attributes.price},-</p>
-        </div>
-        <div class="product-button-div">
-          <p class="product-button">View</p>
-        </div>
-      </a>
-      `;
-      // searchProducts();
-      const productTitle = product.attributes.title;
-      console.log(productTitle);
+              <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
+              </div>
+              <div class="product-information">
+                <h3>${product.attributes.title}</h3>
+                <p>${product.attributes.price},-</p>
+              </div>
+              <div class="product-button-div">
+                <p class="product-button">View</p>
+              </div>
+            </a>`;
 
+    });
+
+    function searchProducts(products) {
+
+      search.onkeyup = () => {
+
+        const searchValue = event.target.value.trim().toLowerCase();
+
+        const filteredProducts = products.data.filter(function (product) {
+
+          if (product.attributes.title.toLowerCase().startsWith(searchValue)) {
+            return true;
+          }
+
+        });
+
+        console.log(filteredProducts);
+
+        filteredProducts.forEach(product => {
+
+          console.log(product.attributes.title);
+
+          productsContainer.innerHTML = "";
+
+          renderProducts();
+
+          productsContainer.innerHTML += `
+          <a href="product-specific.html?id=${product.id}" class="product-card">
+          <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
+          </div>
+          <div class="product-information">
+            <h3>${product.attributes.title}</h3>
+            <p>${product.attributes.price},-</p>
+          </div>
+          <div class="product-button-div">
+            <p class="product-button">View</p>
+          </div>
+        </a>`;
+
+        });
+
+        renderProducts(filteredProducts);
+
+      };
 
     }
+    renderProducts(results);
 
-    // searchProducts.onkeyup = function (event) {
-    //   const searchValue = event.target.value.trim().toLowerCase();
-    //   // const filteredProducts = 
-    // }
+    searchProducts(results);
 
 
   } catch (error) {
     console.log(error);
     displayMessage("error", error, ".product-list");
-  }
 
-})();
+  }
+}
+renderProducts();
