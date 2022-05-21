@@ -1,6 +1,6 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
-
+import { addToCart } from "./addToCart.js";
 
 const queryString = document.location.search;
 
@@ -14,8 +14,6 @@ if (!id) {
 
 const productUrl = baseUrl + "products/" + id + "?populate=*";
 
-
-
 (async function () {
   try {
     const response = await fetch(productUrl);
@@ -28,6 +26,8 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
     const container = document.querySelector(".product-specific");
 
     container.innerHTML = "";
+
+    // console.log(details.data.id);
 
     container.innerHTML += `
     <div class="product-image-specific" style="background-image: url(${details.data.attributes.image.data[0].attributes.url})">
@@ -46,7 +46,7 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
       </div>
       <div>
         <div class="product-information-specific-button">
-          <button class="add-button">Add to cart</button>
+          <button class="add-button" data-id="${details.data.id}" data-title="${details.data.attributes.title}" data-price="${details.data.attributes.price}" data-image="${details.data.attributes.image.data[0].attributes.url}">Add to cart</button>
         </div>
       </div>
     </div>
@@ -56,5 +56,7 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
     console.log(error);
     displayMessage("error", error, ".product-specific");
   }
+
+  addToCart();
 
 })();
