@@ -20,7 +20,7 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
   try {
     const response = await fetch(productUrl);
     const details = await response.json();
-    console.log(details);
+    // console.log(details.data.attributes.image.data[0].attributes.url);
 
     document.title = "Pawn | Product | " + details.data.attributes.title;
 
@@ -30,11 +30,27 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
     container.innerHTML = "";
 
     container.innerHTML += `
-    <img src="${details.data.attributes.image.data[0].attributes.url}" alt="${details.data.attributes.title}">
-      <h2>${details.data.attributes.title}</h2>
-      <p>${details.data.attributes.description}</p>`;
-
-
+    <div class="product-image-specific" style="background-image: url(${details.data.attributes.image.data[0].attributes.url})">
+    </div>
+    <div class="product-information-specific">
+      <div>
+        <div class="product-information-specific-headings">
+          <h1>${details.data.attributes.title}</h1>
+          <h2><i>Some Chess Brand</i></h2>
+          <p>${details.data.attributes.price},-</p>
+        </div>
+        <div class="product-information-specific-information">
+          <p>${details.data.attributes.description}</p>
+          <p>${details.data.attributes.description}</p>
+        </div>
+      </div>
+      <div>
+        <div class="product-information-specific-button">
+          <button class="add-button">Add to cart</button>
+        </div>
+      </div>
+    </div>
+     `;
 
   } catch (error) {
     console.log(error);

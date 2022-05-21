@@ -19,8 +19,12 @@ h1, h2, h3 {
   // transform: scaleY(1.4);
   // font-weight: 400;
   margin: 0;
+  
 }
 
+.main__admin h3 {
+  color: getColor(peach);
+}
 
 p, a{
   // font-family: 'Raleway', sans-serif;

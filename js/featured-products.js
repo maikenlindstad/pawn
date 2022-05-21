@@ -32,9 +32,6 @@ const productsUrl = baseUrl + "products?populate=*";
           <h3>${product.attributes.title}</h3>
           <p>${product.attributes.price},-</p>
         </div>
-        <div class="product-button-div">
-          <p class="product-button">View</p>
-        </div>
       </a>`;
     }
   }

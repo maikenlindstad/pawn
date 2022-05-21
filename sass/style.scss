@@ -3,6 +3,7 @@
 @import "partials/typography";
 @import "partials/home";
 @import "partials/clientNav";
+@import "partials/productSpecific";
 
 .tabs {
   list-style: none;
@@ -293,6 +294,7 @@ input[type="file"] {
   width: 100px;
   border-radius: 4px;
   text-transform: uppercase;
+  margin: 0 2px;
 }
 
 .product-button:hover {
@@ -419,5 +421,21 @@ input[type="file"] {
 
   }
 
+}
 
+.content {
+  background-color: getColor(white);
+  padding: 40px;
+  display: flex;
+  margin: 20px;
+  border-radius: 4px;
+  height: 70%;
+}
+
+.cart__container {
+  border: getColor(white) 10px solid;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  min-height: 800px;
 }
