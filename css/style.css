@@ -139,7 +139,7 @@ body {
 
 .icon {
   color: #C15841;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h1, h2, h3 {
@@ -890,5 +890,17 @@ input[type="file"] {
   width: 100%;
   margin: auto;
   min-height: 800px;
+}
+
+.cart__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart__container__image div {
+  width: 40px;
+  height: 80px;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

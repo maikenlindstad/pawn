@@ -440,3 +440,13 @@ input[type="file"] {
   margin: auto;
   min-height: 800px;
 }
+
+.cart__container {
+  display: flex;
+}
+
+.cart__container__image div {
+  width: 40px; 
+  height: 80px; 
+  background-size: cover;
+}

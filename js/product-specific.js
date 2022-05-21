@@ -28,6 +28,7 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
     container.innerHTML = "";
 
     // console.log(details.data.id);
+    console.log(details.data.attributes.image.data[0].attributes.url);
 
     container.innerHTML += `
     <div class="product-image-specific" style="background-image: url(${details.data.attributes.image.data[0].attributes.url})">

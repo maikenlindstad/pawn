@@ -29,7 +29,6 @@ header.innerHTML = `
       </div>
 
       <div>
-      <a href="login.html"><i class="icon fa-solid fa-user"></i></a>
         <a href="cart.html"><i class="icon fa-solid fa-cart-shopping"></i></a>
       </div>`;
 
