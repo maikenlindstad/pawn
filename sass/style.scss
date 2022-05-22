@@ -5,6 +5,7 @@
 @import "partials/clientNav";
 @import "partials/productSpecific";
 @import "partials/loader";
+@import "partials/login";
 
 .tabs {
   list-style: none;
@@ -42,10 +43,7 @@
 //Products
 
 //General
-.crumbs {
-  display: flex;
-  align-items: center;
-}
+
 
 .warning,
 .success {
@@ -346,7 +344,7 @@ input[type="file"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   // display: none;
 }
 
@@ -381,10 +379,19 @@ input[type="file"] {
   color: getColor(white);
 }
 
-.client__main__content {
+.client__main__content,
+.client__main__content--product__specific {
   max-width: 1200px;
   width: 100%;
   margin: auto;
+}
+
+.client__main__content {
+  padding-top: 100px;
+}
+
+.client__main__content--product__specific {
+  padding-top: 50px;
 }
 
 // .product-image {
@@ -436,17 +443,51 @@ input[type="file"] {
 .cart__container {
   border: getColor(white) 10px solid;
   max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  min-height: 800px;
+  width: 80%;
+  margin: 40px auto;
 }
 
-.cart__container {
-  display: flex;
-}
+
 
 .cart__container__image div {
-  width: 40px; 
+  width: 50px; 
   height: 80px; 
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.cart__container__image--image {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+.cart__container__items div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 0 0;
+}
+
+.cart__container__items--link {
+  color: getColor(white);
+  font-size: 1.4rem;
+}
+
+.cart__container__image,
+.cart__container__items {
+  display: grid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.no-items-in-cart {
+  color: getColor(white);
+  height: 70vh;
+  font-size: 1.6rem;
+  margin-top: 200px
 }

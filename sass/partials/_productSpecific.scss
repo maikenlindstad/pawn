@@ -59,8 +59,51 @@
 }
 .add-button:hover {
   background: darken(getColor(successGreen), 28%);
-
 }
+
+.crumbs-container {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.crumbs-container-admin {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.crumbs-link-active,
+span.crumbs {
+  color: getColor(white);
+  font-weight: 600;
+}
+
+span.crumbs,
+span.crumbs-admin {
+  margin: 0 10px;
+}
+
+.crumbs-link {
+  color: darken(getColor(white), 20%);
+  font-style: italic;
+}
+
+.crumbs-link:hover {
+  text-decoration: underline;
+}
+
+
+.crumbs-link-admin,
+.crumbs-link-admin-active,
+span.crumbs-admin {
+  color: getColor(dark30);
+}
+
+.crumbs-link-admin-active {
+  font-weight: 600;
+}
+
 
 @media only screen and (max-width: 768px) {
   .product-information-specific-button {

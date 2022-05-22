@@ -24,12 +24,14 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
 
 
     const container = document.querySelector(".product-specific");
+    const crumbs = document.querySelector(".crumbs-container");
+
+    crumbs.innerHTML = `
+      <a href="products.html" class="crumbs-link"><p class="crumbs">All products</p></a>
+      <span class="crumbs">/</span>
+      <a href="" class="crumbs-link-active"><p class="crumbs">${details.data.attributes.title}</p></a>`;
 
     container.innerHTML = "";
-
-    // console.log(details.data.id);
-    console.log(details.data.attributes.image.data[0].attributes.url);
-
     container.innerHTML += `
     <div class="product-image-specific" style="background-image: url(${details.data.attributes.image.data[0].attributes.url})">
     </div>
