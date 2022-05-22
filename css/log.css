@@ -46,7 +46,7 @@ header img {
 
 main {
   max-width: 900px;
-  margin: 0 20px;
+  margin: auto;
 }
 .log {
   margin: 20px auto;
@@ -141,7 +141,10 @@ footer {
   padding: 20px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 930px) {
+  main {
+  margin: 0 20px;
+  }
   .color-code {
     flex-direction: column;
   }
