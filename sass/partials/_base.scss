@@ -52,9 +52,15 @@ body {
   border-bottom: getColor(dark30) 1px solid;
 }
 
+// .admin__header__loggedin {
+
+// }
+
 .client__header {
   @extend .global__header;
-  @extend .global__header__admin__menu;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
 
 }

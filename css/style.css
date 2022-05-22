@@ -38,7 +38,7 @@ body {
   margin: auto;
 }
 
-.global__header__admin__menu, .client__header {
+.global__header__admin__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +55,15 @@ body {
 }
 
 .client__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 0;
 }
 
@@ -601,7 +610,7 @@ span.crumbs-admin {
     padding: 20px 0;
     margin-bottom: 20px;
   }
-  .global__header__admin__menu, .client__header {
+  .global__header__admin__menu {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
