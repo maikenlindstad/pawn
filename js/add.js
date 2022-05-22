@@ -18,7 +18,7 @@ const url = baseUrl + "products";
 
 (function imageDisplay() {
   var uploadedImage = "";
-  // Codefoxx
+  // Codefoxx Youtube
   image.addEventListener("change", function () {
     const reader = new FileReader();
     reader.addEventListener("load", () => {
@@ -32,10 +32,6 @@ const url = baseUrl + "products";
   })
 })();
 
-
-// Comment: Proud to say I just understood what needed to be done here. 
-// No Google for this bit
-// And it worked right away :D
 
 const resetButton = document.querySelector("#reset");
 resetButton.addEventListener("click", reset);

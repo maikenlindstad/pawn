@@ -44,7 +44,6 @@ const productUrl = baseUrl + "products/" + id + "?populate=*";
         </div>
         <div class="product-information-specific-information">
           <p>${details.data.attributes.description}</p>
-          <p>${details.data.attributes.description}</p>
         </div>
       </div>
       <div>
