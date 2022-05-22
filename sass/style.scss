@@ -403,6 +403,13 @@ input[type="file"] {
   margin: auto;
 }
 
+@media only screen and (max-width: 638px) {
+  .main__admin__div__page__add--product,
+.main__admin__div__page__edit--product {
+  flex-direction: column-reverse;
+}
+}
+
 @media only screen and (max-width: 510px) {
 
   .category-banner {
