@@ -67,43 +67,39 @@ body {
 // //header admin section
 
 
-// .header__admin__menu__div__nav__ul,
-// .header__client__menu__div__nav__ul
-//  {
-//   padding-inline-start: 0;
-//   display: flex;
-//   list-style: none;
-// }
+.header__admin__menu__div__nav__ul
+ {
+  padding-inline-start: 0;
+  display: flex;
+  list-style: none;
+}
 
-// .header__admin__menu__div__nav__ul--li,
-// .header__client__menu__div__nav__ul--li
-//  {
-//   margin: 0 5px;
-// }
+.header__admin__menu__div__nav__ul--li
+ {
+  margin: 0 5px;
+}
 
-// .header__admin__menu__div__nav__ul--li__a,
-// .header__client__menu__div__nav__ul--li__a
-//  {
-//   text-decoration: none;
-// }
+.header__admin__menu__div__nav__ul--li__a
+ {
+  text-decoration: none;
+}
 
-// .header__admin__menu__div__nav__ul--li__a {
-//   color: getColor(dark30);
-// }
+.header__admin__menu__div__nav__ul--li__a {
+  color: getColor(dark30);
+}
 
 // .header__client__menu__div__nav__ul--li__a {
 //   color: getColor(peach);
 // }
 
 
-// .header__admin__menu__div__nav__ul--li__a:hover,
-// .header__client__menu__div__nav__ul--li__a:hover {
-//   text-decoration: underline;
-// }
+.header__admin__menu__div__nav__ul--li__a:hover{
+  text-decoration: underline;
+}
 
-// .active {
-//   text-decoration: underline;
-// }
+.active {
+  text-decoration: underline;
+}
 
 main {
   flex: 1 0 auto;

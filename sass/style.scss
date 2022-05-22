@@ -6,6 +6,7 @@
 @import "partials/productSpecific";
 @import "partials/loader";
 @import "partials/login";
+@import "partials/headerAdmin";
 
 .tabs {
   list-style: none;
@@ -447,9 +448,9 @@ input[type="file"] {
   background-color: getColor(white);
   padding: 40px;
   display: flex;
-  margin: 20px;
+  margin: 20px 20px 100px 20px;
   border-radius: 4px;
-  height: 70%;
+  height: 300px;
 }
 
 .cart__container {
