@@ -20,6 +20,14 @@ p {
   font-size: 1.2rem;
   max-width: 700px;
 }
+
+
+
+.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: #303030 solid 10px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -35,8 +43,12 @@ header img {
   border: none;
 }
 
+
 main {
   max-width: 900px;
+  margin: 0 20px;
+}
+.log {
   margin: 20px auto;
 }
 
@@ -45,6 +57,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 
 
 
@@ -126,4 +139,10 @@ img {
 footer {
   background-color: #303030;
   padding: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .color-code {
+    flex-direction: column;
+  }
 }
