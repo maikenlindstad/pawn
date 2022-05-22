@@ -760,7 +760,7 @@ a {
 .main__admin__div__page__add--product__div__form__div__textarea,
 .main__admin__div__page__edit--product__div__form__div__textarea {
   border: #C15841 1px solid;
-  max-width: 280px;
+  max-width: 300px;
   width: 100%;
   font-size: 1.2rem;
 }
@@ -994,6 +994,10 @@ input[type="file"] {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

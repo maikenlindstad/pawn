@@ -207,7 +207,7 @@ a {
 .main__admin__div__page__add--product__div__form__div__textarea,
 .main__admin__div__page__edit--product__div__form__div__textarea {
   border:  getColor(peach) 1px solid;
-  max-width: 280px;
+  max-width: 300px;
   width: 100%;
   font-size: 1.2rem;
 }
@@ -409,7 +409,10 @@ input[type="file"] {
   .main__admin__div__page__add--product,
 .main__admin__div__page__edit--product {
   flex-direction: column-reverse;
+  padding: 40px;
+  align-items: center;
 }
+
 }
 
 @media only screen and (max-width: 510px) {
