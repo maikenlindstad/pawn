@@ -642,6 +642,10 @@ span.crumbs-admin {
   display: block;
 }
 
+.activeSectionHeader {
+  font-weight: 600;
+}
+
 .products-list {
   display: -webkit-box;
   display: -ms-flexbox;
