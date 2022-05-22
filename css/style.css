@@ -340,7 +340,14 @@ label {
     color: white;
   }
   .hero-banner {
-    font-size: 0.2rem;
+    font-size: 0.6rem;
+  }
+  h1.quote-p {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .quote div {
+    margin: 0 5px;
   }
   .category-banner {
     display: none;
@@ -895,6 +902,7 @@ input[type="file"] {
   background-position-x: center;
   background-position-y: center;
   margin-bottom: 20px;
+  height: 380px;
 }
 
 .product-information h3,
@@ -1076,7 +1084,7 @@ input[type="file"] {
     max-width: 170px;
   }
   .product-image {
-    height: 100px;
+    height: 300px;
   }
 }
 

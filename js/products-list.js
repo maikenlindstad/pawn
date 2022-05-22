@@ -19,7 +19,7 @@ async function renderProducts() {
       const product = results.data[i];
       productsContainer.innerHTML += `
       <a href="product-specific.html?id=${product.id}" class="product-card">
-        <div class="product-image" style="background-size: cover; background-repeat: no-repeat;height: 380px; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
+        <div class="product-image" style="background-size: cover; background-repeat: no-repeat; width: 220px; background-image: url(${product.attributes.image.data[0].attributes.url})">
         </div>
         <div class="product-information">
           <h3>${product.attributes.title}</h3>
