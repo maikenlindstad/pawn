@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+  .admin__header {
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
   .global__header__admin__menu {
     display: grid;
     justify-content: center;
