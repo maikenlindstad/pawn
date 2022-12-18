@@ -26,6 +26,8 @@ Clone the repo.
 
 Open in editor.
 
+(The API can't be used or visited at the moment.)
+
 ## Contributing
 
 You can open a pull request so code can be reviewed.
